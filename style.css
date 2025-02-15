@@ -17,8 +17,8 @@ body {
     font-family: 'Open Sans';
     background-color: var(--color-3);
     color: var(--color-1);
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
+    /* height: 100vh;  */
 }
 
 a {
@@ -54,8 +54,18 @@ nav {
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
+}
+
+/* canvas container */
+
+.canvas-container {
+    margin: 20px 0;
+    background-image: url(./images/background.png);
+    background-size: 360px 640px;
+    background-repeat: no-repeat;
+    margin-right: 32px;
 }
 
 /* instructions container */
@@ -69,6 +79,7 @@ nav {
     justify-content: center;
     text-align: center;
     color: #dddddd;
+    margin: 20px 0;
 }
 
 .instructions-heading {
