@@ -94,7 +94,7 @@ window.onload = function() {
     setInterval(placePipes, 1500);
     document.addEventListener("keydown", moveBirdKey);
     canvas.addEventListener("mousedown", moveBirdMouse);
-    document.addEventListener("touchstart", moveBirdTouch);
+    canvas.addEventListener("touchstart", moveBirdTouch);
 
     canvas.addEventListener('mousemove', (event) => {
         const rect = canvas.getBoundingClientRect();
