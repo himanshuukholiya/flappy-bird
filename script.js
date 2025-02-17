@@ -182,12 +182,12 @@ function update() {
                 pipeArray = [];
                 score = 0;
                 gameOver = false;
-                gameStarted = false;
                 restartButton = false;
                 birdX = canvasWidth / 8;
                 birdY = canvasHeight / 2.5;
                 velocityY = 0;
                 gravity = 0.3
+                gameStarted = true;
             }
         });
     }
