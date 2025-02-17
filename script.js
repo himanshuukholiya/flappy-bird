@@ -46,7 +46,7 @@ let ground = {
 // physics
 let velocityX = -2; // pipes moving left speed
 let velocityY = 0; // bird jump speed
-let gravity = 0.3;
+let gravity = 0.4;
 
 let gameStarted = false;
 let gameOver = false;
@@ -184,6 +184,10 @@ function update() {
                 gameOver = false;
                 gameStarted = false;
                 restartButton = false;
+                birdX = canvasWidth / 8;
+                birdY = canvasHeight / 2.5;
+                velocityY = 0;
+                gravity = 0.3
             }
         });
     }
@@ -254,7 +258,7 @@ function moveBirdTouch() {
     jump();
 }
 function jump() {
-    velocityY -= 6;
+    velocityY = -6;
 }
 
 // check collision
