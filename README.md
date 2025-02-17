@@ -40,7 +40,6 @@ To run this game locally, follow these steps:
 
    ```bash
    git clone https://github.com/himanshuukholiya/flappy-bird.git
-   cd flappy-bird
    ```
 
 2. **Open `index.html`** in your browser to start playing.
